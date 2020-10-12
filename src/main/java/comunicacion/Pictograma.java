@@ -16,7 +16,9 @@ public abstract class Pictograma {
 	public void setOrigen(String origen) {
 		this.origen = origen;
 	}
-	
+	public int sale(){			//metodo prueba
+		return 3;
+	}
 	abstract String interpretacion ();
 	
 	public abstract String toString();
