@@ -12,6 +12,14 @@ public class Libro extends Escrito{
 		super(origen, titulo, autor, paginas);
 		// TODO Auto-generated constructor stub
 	}
+	public Libro(String origen, String titulo, String autor, int paginas, String a, String b,String c, String d) {
+		super(origen, titulo, autor, paginas);
+		co_autor=a;
+		editorial=b;
+		edicion=c;
+		interpretacion=d;
+	}
+	
 
 	@Override
 	int palabrasTotales(int palabrasPagina) {
