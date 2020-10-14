@@ -19,7 +19,7 @@ public class Tesis extends Escrito {
 	@Override
 	int palabrasTotales(int palabrasPagina) {
 		// TODO Auto-generated method stub
-		return 0;
+		return (palabrasPagina*getPaginas()*5);
 	}
 
 	@Override
@@ -31,7 +31,7 @@ public class Tesis extends Escrito {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return null;
+		return (getOrigen() + "\n" + getTitulo() + "\n" + getAutor()+ "\n"  + getPaginas() + "\n" + idea + "\n" + argumentos + "\n" + conclucion + "\n" + referencias);
 	}
 
 	public String getIdea() {
