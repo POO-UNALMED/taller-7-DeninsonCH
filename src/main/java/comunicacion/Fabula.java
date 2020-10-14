@@ -1,14 +1,10 @@
 package comunicacion;
 
-public class Libro extends Escrito{
-	
-	private String co_autor;
-	private String editorial;
-	private String edicion;
+public class Fabula extends Escrito{
+	private String enseñanza;
 	private String interpretacion;
-	
-	
-	public Libro(String origen, String titulo, String autor, int paginas) {
+
+	public Fabula(String origen, String titulo, String autor, int paginas) {
 		super(origen, titulo, autor, paginas);
 		// TODO Auto-generated constructor stub
 	}
@@ -31,28 +27,12 @@ public class Libro extends Escrito{
 		return null;
 	}
 
-	public String getCo_autor() {
-		return co_autor;
+	public String getEnseñanza() {
+		return enseñanza;
 	}
 
-	public void setCo_autor(String co_autor) {
-		this.co_autor = co_autor;
-	}
-
-	public String getEditorial() {
-		return editorial;
-	}
-
-	public void setEditorial(String editorial) {
-		this.editorial = editorial;
-	}
-
-	public String getEdicion() {
-		return edicion;
-	}
-
-	public void setEdicion(String edicion) {
-		this.edicion = edicion;
+	public void setEnseñanza(String enseñanza) {
+		this.enseñanza = enseñanza;
 	}
 
 	public String getInterpretacion() {
@@ -63,5 +43,4 @@ public class Libro extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 	
-
 }
