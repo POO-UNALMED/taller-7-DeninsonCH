@@ -18,13 +18,13 @@ public class Periodico extends Escrito{
 		interpretacion=i;
 	}
 	@Override
-	int palabrasTotales(int palabrasPagina) {
+	public int palabrasTotales(int palabrasPagina) {
 		// TODO Auto-generated method stub
 		return (getPaginas()*palabrasPagina*10);
 	}
 
 	@Override
-	String interpretacion() {
+	public String interpretacion() {
 		// TODO Auto-generated method stub
 		return interpretacion;
 	}

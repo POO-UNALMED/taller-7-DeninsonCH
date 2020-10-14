@@ -23,14 +23,14 @@ public class Libro extends Escrito{
 	
 
 	@Override
-	int palabrasTotales(int palabrasPagina) {
+	public int palabrasTotales(int palabrasPagina) {
 		// TODO Auto-generated method stub
 		int t=getPaginas()*2*palabrasPagina;
 		return t;
 	}
 
 	@Override
-	String interpretacion() {
+	public String interpretacion() {
 		// TODO Auto-generated method stub
 		return interpretacion;
 	}

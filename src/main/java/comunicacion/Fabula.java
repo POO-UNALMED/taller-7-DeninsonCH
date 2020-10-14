@@ -12,18 +12,18 @@ public class Fabula extends Escrito{
 	*/
 	public Fabula(String origen, String titulo, String autor, int paginas, String e, String i) {
 		super(origen, titulo, autor, paginas);
-		ensenanza=e;
+		this.ensenanza=e;
 		this.interpretacion=i;
 	}
 
 	@Override
-	int palabrasTotales(int palabrasPagina) {
+	public int palabrasTotales(int palabrasPagina) {
 		// TODO Auto-generated method stub
 		return (palabrasPagina*getPaginas()*1);
 	}
 
 	@Override
-	String interpretacion() {
+	public String interpretacion() {
 		// TODO Auto-generated method stub
 		return interpretacion;
 	}
