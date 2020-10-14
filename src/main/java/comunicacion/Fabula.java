@@ -8,11 +8,16 @@ public class Fabula extends Escrito{
 		super(origen, titulo, autor, paginas);
 		// TODO Auto-generated constructor stub
 	}
+	public Fabula(String origen, String titulo, String autor, int paginas, String e, String i) {
+		super(origen, titulo, autor, paginas);
+		enseñanza=e;
+		interpretacion=i;
+	}
 
 	@Override
 	int palabrasTotales(int palabrasPagina) {
 		// TODO Auto-generated method stub
-		return 0;
+		return (palabrasPagina*getPaginas()*1);
 	}
 
 	@Override
@@ -24,7 +29,7 @@ public class Fabula extends Escrito{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return null;
+		return (getOrigen() + "\n" + getTitulo() + "\n" + getAutor()+ "\n"  + getPaginas() + "\n" + enseñanza);
 	}
 
 	public String getEnseñanza() {
