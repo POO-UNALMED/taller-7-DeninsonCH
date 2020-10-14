@@ -7,11 +7,12 @@ public class Libro extends Escrito{
 	private String edicion;
 	private String interpretacion;
 	
-	
+	/*
 	public Libro(String origen, String titulo, String autor, int paginas) {
 		super(origen, titulo, autor, paginas);
 		// TODO Auto-generated constructor stub
 	}
+	*/
 	public Libro(String origen, String titulo, String autor, int paginas, String a, String b,String c, String i) {
 		super(origen, titulo, autor, paginas);
 		co_autor=a;

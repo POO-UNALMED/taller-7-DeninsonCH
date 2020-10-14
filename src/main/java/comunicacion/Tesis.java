@@ -7,13 +7,19 @@ public class Tesis extends Escrito {
 	private String referencias;
 	private String interpretacion;
 	
-	
-	
-	
-	
+	/*
 	public Tesis(String origen, String titulo, String autor, int paginas) {
 		super(origen, titulo, autor, paginas);
 		// TODO Auto-generated constructor stub
+	}
+	*/
+	public Tesis(String origen, String titulo, String autor, int paginas, String id, String[] ar, String c, String r, String i) {
+		super(origen, titulo, autor, paginas);
+		idea= id; 
+		argumentos = ar; 
+		conclucion = c;
+		referencias  = r;
+		interpretacion = i;
 	}
 
 	@Override

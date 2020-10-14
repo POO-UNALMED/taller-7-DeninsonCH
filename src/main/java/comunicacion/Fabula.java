@@ -4,10 +4,12 @@ public class Fabula extends Escrito{
 	private String ensenanza;
 	private String interpretacion;
 
+	/*
 	public Fabula(String origen, String titulo, String autor, int paginas) {
 		super(origen, titulo, autor, paginas);
 		// TODO Auto-generated constructor stub
 	}
+	*/
 	public Fabula(String origen, String titulo, String autor, int paginas, String e, String i) {
 		super(origen, titulo, autor, paginas);
 		ensenanza=e;

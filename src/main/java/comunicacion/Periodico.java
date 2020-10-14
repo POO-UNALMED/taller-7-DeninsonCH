@@ -5,10 +5,12 @@ public class Periodico extends Escrito{
 	private String primicia;
 	private String interpretacion;
 	
+	/*
 	public Periodico(String origen, String titulo, String autor, int paginas) {
 		super(origen, titulo, autor, paginas);
 		// TODO Auto-generated constructor stub
 	}
+	*/
 	public Periodico(String origen, String titulo, String autor, int paginas, String f, String p, String i) {
 		super(origen, titulo, autor, paginas);
 		fecha=f;
