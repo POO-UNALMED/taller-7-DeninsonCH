@@ -13,7 +13,7 @@ public class Fabula extends Escrito{
 	public Fabula(String origen, String titulo, String autor, int paginas, String e, String i) {
 		super(origen, titulo, autor, paginas);
 		ensenanza=e;
-		interpretacion=i;
+		this.interpretacion=i;
 	}
 
 	@Override
