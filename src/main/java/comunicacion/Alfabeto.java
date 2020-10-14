@@ -5,9 +5,10 @@ public abstract class Alfabeto extends Pictograma{
 	private String[] letras;
 	private String interpretacion;
 	
-	public Alfabeto(String origen) {
+	public Alfabeto(String origen, String [] letras, String interpretacion) {
 		super(origen);
-		// TODO Auto-generated constructor stub
+		this.setLetras(letras);
+		this.setInterpretacion(interpretacion);
 	}
 	
 	public int cantidadLetras() {
