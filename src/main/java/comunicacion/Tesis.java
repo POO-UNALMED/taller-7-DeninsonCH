@@ -3,7 +3,7 @@ package comunicacion;
 public class Tesis extends Escrito {
 	private String idea;
 	private String[] argumentos;
-	private String conclucion;
+	private String conclusion;
 	private String referencias;
 	private String interpretacion;
 	
@@ -17,7 +17,7 @@ public class Tesis extends Escrito {
 		super(origen, titulo, autor, paginas);
 		idea= id; 
 		argumentos = ar; 
-		this.conclucion = c;
+		this.conclusion = c;
 		referencias  = r;
 		interpretacion = i;
 	}
@@ -37,7 +37,7 @@ public class Tesis extends Escrito {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return (getOrigen() + "\n" + getTitulo() + "\n" + getAutor()+ "\n"  + getPaginas() + "\n" + idea + "\n" + argumentos.length + "\n" + conclucion + "\n" + referencias);
+		return (getOrigen() + "\n" + getTitulo() + "\n" + getAutor()+ "\n"  + getPaginas() + "\n" + idea + "\n" + argumentos.length + "\n" + conclusion + "\n" + referencias);
 	}
 
 	public String getIdea() {
@@ -56,12 +56,12 @@ public class Tesis extends Escrito {
 		this.argumentos = argumentos;
 	}
 
-	public String getConclucion() {
-		return conclucion;
+	public String getConclusion() {
+		return conclusion;
 	}
 
-	public void setConclucion(String conclucion) {
-		this.conclucion = conclucion;
+	public void setConclusion(String conclucion) {
+		this.conclusion = conclucion;
 	}
 
 	public String getReferencias() {
