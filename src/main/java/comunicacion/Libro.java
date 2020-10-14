@@ -12,19 +12,20 @@ public class Libro extends Escrito{
 		super(origen, titulo, autor, paginas);
 		// TODO Auto-generated constructor stub
 	}
-	public Libro(String origen, String titulo, String autor, int paginas, String a, String b,String c, String d) {
+	public Libro(String origen, String titulo, String autor, int paginas, String a, String b,String c, String i) {
 		super(origen, titulo, autor, paginas);
 		co_autor=a;
 		editorial=b;
 		edicion=c;
-		interpretacion=d;
+		interpretacion=i;
 	}
 	
 
 	@Override
 	int palabrasTotales(int palabrasPagina) {
 		// TODO Auto-generated method stub
-		return 0;
+		int t=getPaginas()*2*palabrasPagina;
+		return t;
 	}
 
 	@Override
@@ -36,7 +37,7 @@ public class Libro extends Escrito{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return null;
+		return (getOrigen() + "\n" + getTitulo() + "\n" + getAutor()+ "\n"  + getPaginas() + "\n" + co_autor + "\n" +editorial + "\n"+ edicion );
 	}
 
 	public String getCo_autor() {
