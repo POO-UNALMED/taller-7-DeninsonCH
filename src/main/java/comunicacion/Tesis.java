@@ -25,7 +25,7 @@ public class Tesis extends Escrito {
 	@Override
 	String interpretacion() {
 		// TODO Auto-generated method stub
-		return null;
+		return interpretacion;
 	}
 
 	@Override

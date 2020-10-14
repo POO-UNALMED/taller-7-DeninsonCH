@@ -22,7 +22,7 @@ public class Libro extends Escrito{
 	@Override
 	String interpretacion() {
 		// TODO Auto-generated method stub
-		return null;
+		return interpretacion;
 	}
 
 	@Override
